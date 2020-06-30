@@ -27,7 +27,7 @@ pipeline {
 						
 						echo("vor junit")
 					   //junit '*/target/surefire-reports/TEST-.xml'
-					   junit 'target/surefire-reports/*.xml
+					   junit 'target/surefire-reports/*.xml'
 					   
 					   //echo("vor artifacts")
 					   //archiveArtifacts 'target/*.jar'
