@@ -5,8 +5,6 @@ pipeline {
    stages {
       stage('Build') {
          steps {
-            // Get some code from a GitHub repository
-            git 'https://github.com/1337flori1337/JUnitPipelineTest/tree/master/junit-demo'
 
             // Run Maven on a Unix agent.
             //sh "mvn -Dmaven.test.failure.ignore=true clean package"
