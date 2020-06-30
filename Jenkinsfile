@@ -20,9 +20,9 @@ pipeline {
 					// If Maven was able to run the tests, even if some of the test
 					// failed, record the test results and archive the jar file.
 					success {
-						echo("vor archive")
+						//echo("vor archive")
 						
-					   archive "target/**/*"
+					   //archive "target/**/*"
 						
 						
 						echo("vor junit")
@@ -30,7 +30,7 @@ pipeline {
 					   junit 'target/surefire-reports/*.xml'
 					   
 					   //echo("vor artifacts")
-					   //archiveArtifacts 'target/*.jar'
+					   archiveArtifacts 'target/*.jar'
 					   
 					   
 					   echo("success")
